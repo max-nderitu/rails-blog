@@ -1,15 +1,12 @@
 <!-- todo think on how to make  "data-turbo-track": "reload" work, my thinking it how the css file is generate.... for the reload to work the css file name needs to change each time -->
-
+<!-- todo  make live reload work, why it is not working I don't know -->
 <%= stylesheet_link_tag "author", "data-turbo-track": "reload" %>
 
 <div class="author">
-  <%#= image_tag "images/author.jpg", width:"180", height:"180", blur:"5" %>
+  <%= image_tag "author.jpg", class: "author__image", width:"180", height:"180", blur:"5" %>
 
-  <h1>Vamp Stories</h1>
-
-  <p class="author__intro">
-    Just stories for now
-  </p>
+  <h1 class="author__site-title">Above meeh stories</h1>
+  <p class="author__intro">Just stories for now</p>
 
   <p class="author__links">
     <!--			<a href="//twitter.com/gridsome">Follow on Twitter</a>-->
